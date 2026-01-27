@@ -1,0 +1,154 @@
+$primary-yellow: #f1b400;
+
+.swiper {
+  background-color: #f1b400;
+  width: 100%;
+  .slide-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    margin: 100px 0;
+    height: 35%;
+    background-color: #000;
+  }
+
+  .content {
+    color: $color-white;
+    width: 100%;
+    background-color: #000;
+    padding: 20px 140px;
+    h1 {
+      font-size: 42px;
+      line-height: 1.2;
+      margin-bottom: 16px;
+    }
+    .animate-desc {
+      margin-bottom: 24px;
+    }
+    .btn-more {
+      text-decoration: none;
+      color: $color-orange;
+      &:hover {
+        color: $color-white;
+      }
+    }
+  }
+
+  .image-box img {
+    max-height: 480px;
+    border-radius: 150px 150px 0 0;
+    z-index: 999px;
+    height: 100%;
+    padding: 0 140px;
+  }
+}
+
+.swiper-pagination {
+  bottom: 30px !important; // Pastdan joyi
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px; // Nuqtalar orasidagi masofa
+
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background: #555; // Aktiv bo'lmagan nuqta rangi
+    opacity: 1;
+    position: relative;
+    transition: all 0.3s ease;
+    margin: 0 !important;
+
+    // Aktiv holatdagi stil
+    &-active {
+      background: #000 !important; // Ichki nuqta qora bo'ladi
+      transform: scale(1.2);
+
+      // Tashqi sariq halqa (Border)
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 24px; // Halqa o'lchami
+        height: 24px;
+        border-radius: 50%;
+        animation: pulseRing 1.5s infinite ease-out; // Aktiv turganda ozgina o'ynab turadi
+      }
+
+      // Ichki qora nuqta atrofidagi kichik bo'shliq
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 16px;
+        height: 16px;
+        border: 2px solid #000; // Ichki qora chiziq
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+// Tashqi halqa uchun yengil animatsiya (ixtiyoriy)
+@keyframes pulseRing {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.1);
+    opacity: 0.8;
+  }
+}
+
+// Animatsiya Keyframelari
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes colorSwap {
+  0% {
+    color: #f1b400;
+  }
+  100% {
+    color: #ffffff;
+  }
+}
+
+// --- Swiper Aktiv bo'lganda animatsiyalar ishga tushadi ---
+.swiper-slide-active {
+  .animate-title {
+    animation: fadeInUp 0.8s ease forwards;
+  }
+  .animate-desc {
+    animation: fadeInUp 0.8s 0.3s ease forwards;
+    opacity: 0;
+  }
+  .animate-img {
+    animation: slideInRight 1s ease forwards;
+  }
+}

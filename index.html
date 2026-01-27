@@ -1,9 +1,254 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Milandi</title>
-  </head>
-  <body></body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./scss/main.css" />
+  <link rel="shortcut icon" href="./images/logo.svg" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <title>Milandi</title>
+</head>
+
+<body style="background: rgb(238, 238, 238);">
+  <header>
+    <div class="header-bottom"></div>
+    <div class="container">
+      <div class="lang-btns">
+        <div class="lang-switcher">
+          <button class="lang-switcher__btn active" onclick="changeLang(this)">
+            RU
+          </button>
+          <button class="lang-switcher__btn" onclick="changeLang(this)">
+            UZB
+          </button>
+        </div>
+      </div>
+
+      <nav id="nav">
+        <div class="nav__left">
+          <div class="menu" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+
+          <div class="res__menu" id="mobileMenu">
+            <div class="res__functions">
+              <a href="#" class="active">Главная</a>
+              <a href="#">О нас</a>
+              <a href="#">Категории</a>
+              <a href="#">Сотрудничество</a>
+            </div>
+            <div class="res__btns">
+              <button class="sing-in">Регистрация</button>
+              <button class="log-in">Вход</button>
+            </div>
+          </div>
+
+          <div class="logos">
+            <a href="./index.html"><img src="./images/logo.svg" alt="logo" class="logo"></a>
+            <a href="./index.html"><img src="./images/logo-name.svg" alt="logo-name" class="logo-name" /></a>
+          </div>
+
+
+          <div class="functions">
+            <a href="#" class="functions__link active">Главная</a>
+            <a href="#" class="functions__link">О нас</a>
+            <a href="#" class="functions__link">Категории</a>
+            <a href="#" class="functions__link">Сотрудничество</a>
+          </div>
+        </div>
+
+        <div class="nav__right">
+          <div class="nav__btns">
+            <button class="log-in">Войти</button>
+            <button class="sing-in">Зарегистрироваться</button>
+          </div>
+          <a href="#" class="cart-wrapper">
+            <img src="./images/shop-icon.svg" alt="Savat" class="cart-icon" />
+            <span class="cart-badge">0</span>
+          </a>
+        </div>
+      </nav>
+      <!-- <button class="add__shop">Добавить в корзину</button> -->
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide-bg">
+            <div class="slide-container">
+              <div class="content">
+                <h1 class="animate-title">Быстрый и удобный шоппинг, не выходя из дома.</h1>
+                <p class="animate-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Convallis lectus odio
+                  vitae, duis nec ut velit, fermentum. Diam sollicitudin arcu euismod morbi. Adipiscing bibendum
+                  elementum, fermentum amet quis erat.</p>
+                <a href="#" class="btn-more">▶ ВСЕ ТОВАРЫ</a>
+              </div>
+              <div class="image-box">
+                <img src="./images/girl-carousel.svg" class="animate-img" alt="Model 1">
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide-bg">
+            <div class="slide-container">
+              <div class="content">
+                <h1 class="animate-title">Быстрый и удобный шоппинг, не выходя из дома.</h1>
+                <p class="animate-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Convallis lectus odio
+                  vitae, duis nec ut velit, fermentum. Diam sollicitudin arcu euismod morbi. Adipiscing bibendum
+                  elementum, fermentum amet quis erat.</p>
+                <a href="#" class="btn-more">▶ ВСЕ ТОВАРЫ</a>
+              </div>
+              <div class="image-box">
+                <img src="./images/girl-carousel.svg" class="animate-img" alt="Model 2">
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <div class="services">
+        <h1 class="service__intro">Наши преимущества</h1>
+        <div class="services__card">
+          <button class="service__box-1">
+            <img src="./images/ic_stars.svg" alt="ic_stars">
+            <h4>Лучший сервис</h4>
+          </button>
+          <button class="service__box-2">
+            <img src="./images/ic_truck.svg" alt="ic_truck">
+            <h4>Экспресс доставка </h4>
+          </button>
+          <button class="service__box-3">
+            <img src="./images/ic_like.svg" alt="ic_like">
+            <h4>Лучшее качество в стране</h4>
+          </button>
+        </div>
+      </div>
+
+      <div class="products">
+        <h1>Лучшие товары</h1>
+        <div class="product__cards">
+          <span class="best__product__card">
+            <img src="./images/product-img-1.svg" alt="product-img-1">
+            <div class="product__info">
+              <h3>Lorem ipsum dolor sit amet</h3>
+              <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit sed odio sed nascetur.</h4>
+              <div class="product__mark">
+                <div class="rating">
+                  <input value="5" name="rating" id="star5" type="radio">
+                  <label for="star5"></label>
+                  <input value="4" name="rating" id="star4" type="radio">
+                  <label for="star4"></label>
+                  <input value="3" name="rating" id="star3" type="radio">
+                  <label for="star3"></label>
+                  <input value="2" name="rating" id="star2" type="radio">
+                  <label for="star2"></label>
+                  <input value="1" name="rating" id="star1" type="radio">
+                  <label for="star1"></label>
+                </div>
+
+                <div class="product__size">
+                  <h6>855 у.е.</h6>
+                </div>
+              </div>
+              <button class="add__shop">Добавить в корзину</button>
+            </div>
+          </span>
+
+          <span class="best__product__card">
+            <img src="./images/product-img-2.svg" alt="product-img-1">
+            <div class="product__info">
+              <h3>Lorem ipsum dolor sit amet</h3>
+              <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit sed odio sed nascetur.</h4>
+              <div class="product__mark">
+                <div class="rating">
+                  <input value="5" name="rating" id="star5" type="radio">
+                  <label for="star5"></label>
+                  <input value="4" name="rating" id="star4" type="radio">
+                  <label for="star4"></label>
+                  <input value="3" name="rating" id="star3" type="radio">
+                  <label for="star3"></label>
+                  <input value="2" name="rating" id="star2" type="radio">
+                  <label for="star2"></label>
+                  <input value="1" name="rating" id="star1" type="radio">
+                  <label for="star1"></label>
+                </div>
+
+                <div class="product__size">
+                  <h6>855 у.е.</h6>
+                </div>
+              </div>
+              <button class="add__shop">Добавить в корзину</button>
+            </div>
+          </span>
+
+          <span class="best__product__card">
+            <img src="./images/product-img-3svg.svg" alt="product-img-1">
+            <div class="product__info">
+              <h3>Lorem ipsum dolor sit amet</h3>
+              <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit sed odio sed nascetur.</h4>
+              <div class="product__mark">
+                <div class="rating">
+                  <input value="5" name="rating" id="star5" type="radio">
+                  <label for="star5"></label>
+                  <input value="4" name="rating" id="star4" type="radio">
+                  <label for="star4"></label>
+                  <input value="3" name="rating" id="star3" type="radio">
+                  <label for="star3"></label>
+                  <input value="2" name="rating" id="star2" type="radio">
+                  <label for="star2"></label>
+                  <input value="1" name="rating" id="star1" type="radio">
+                  <label for="star1"></label>
+                </div>
+
+                <div class="product__size">
+                  <h6>855 у.е.</h6>
+                </div>
+              </div>
+              <button class="add__shop">Добавить в корзину</button>
+            </div>
+          </span>
+
+          <span class="best__product__card">
+            <img src="./images/product-img-4svg.svg" alt="product-img-1">
+            <div class="product__info">
+              <h3>Lorem ipsum dolor sit amet</h3>
+              <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit sed odio sed nascetur.</h4>
+              <div class="product__mark">
+                <div class="rating">
+                  <input value="5" name="rating" id="star5" type="radio">
+                  <label for="star5"></label>
+                  <input value="4" name="rating" id="star4" type="radio">
+                  <label for="star4"></label>
+                  <input value="3" name="rating" id="star3" type="radio">
+                  <label for="star3"></label>
+                  <input value="2" name="rating" id="star2" type="radio">
+                  <label for="star2"></label>
+                  <input value="1" name="rating" id="star1" type="radio">
+                  <label for="star1"></label>
+                </div>
+
+                <div class="product__size">
+                  <h6>855 у.е.</h6>
+                </div>
+              </div>
+              <button class="add__shop">Добавить в корзину</button>
+            </div>
+          </span>
+        </div>
+      </div>
+
+    </div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./js/main.js"></script>
+
+</body>
+
 </html>

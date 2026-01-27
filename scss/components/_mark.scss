@@ -1,0 +1,33 @@
+$star-color: #f1b400; // Olovrang o'zgaruvchisi
+$default-color: #ccc;
+
+.rating {
+  display: inline-block;
+
+  input {
+    display: none;
+  }
+
+  label {
+    float: right;
+    cursor: pointer;
+    color: $default-color;
+    transition: color 0.3s;
+
+    &:before {
+      content: "\2605";
+      font-size: 24px;
+    }
+
+    // Hover holati va hoverdan keyingi label'lar uchun
+    &:hover,
+    &:hover ~ label {
+      color: $star-color;
+    }
+  }
+
+  // Input check qilinganda undan keyingi barcha label'lar uchun
+  input:checked ~ label {
+    color: $star-color;
+  }
+}

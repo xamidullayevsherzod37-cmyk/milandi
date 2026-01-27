@@ -1,0 +1,145 @@
+.lang-btns {
+  background-color: $color-black;
+  padding: 13px 145px;
+  // O'zgaruvchilar
+  .lang-switcher {
+    display: flex;
+    align-items: center;
+    background-color: #000; // Qora fon
+
+    &__btn {
+      background: none;
+      border: none;
+      color: gray; // Avval hamma til kulrang bo'ladi
+      font-size: 12px;
+      font-weight: bold;
+      cursor: pointer;
+      text-transform: uppercase;
+      transition: color 0.3s ease;
+      padding: 0 10px;
+
+      // BOSILGAN (ACTIVE) HOLATI
+      &.active {
+        color: $color-white; // Tanlangan til oppoq bo'ladi
+        pointer-events: none; // Tanlangan tilni qayta bosib bo'lmaydi
+      }
+
+      &:hover:not(.active) {
+        color: lighten(gray, 20%);
+      }
+    }
+
+    &__separator {
+      color: #444; // O'rtadagi "|" belgisi uchun rang
+      font-size: 20px;
+      user-select: none;
+    }
+  }
+}
+
+.services {
+  margin: 70px 140px;
+  h1 {
+    margin-bottom: 24px;
+    font-size: 34px;
+    line-height: 140%;
+    display: grid;
+    justify-content: center;
+  }
+  .services__card {
+    // display: flex;
+    // justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
+    // gap: 140px;
+
+    .service__box-1 {
+      display: grid;
+      padding: 30px 60px;
+      justify-content: center;
+      background-color: rgba(255, 255, 255, 1);
+      box-shadow: 13px 10px 12px -6px rgba(34, 60, 80, 0.27);
+      border-radius: 12px;
+      border: none;
+      transition: transform 0.3s;
+      img {
+        margin-bottom: 25px;
+        display: flex;
+        justify-self: center;
+        width: 24px;
+        height: 24px;
+      }
+      h4 {
+        display: flex;
+        justify-self: center;
+      }
+      &:hover {
+        transform: translateY(-5px);
+      }
+    }
+    .service__box-2 {
+      display: grid;
+      padding: 30px 80px;
+      justify-content: center;
+      background-color: rgba(255, 255, 255, 1);
+      box-shadow: 13px 10px 12px -6px rgba(34, 60, 80, 0.27);
+      border-radius: 12px;
+      border: none;
+      transition: transform 0.3s;
+      img {
+        margin-bottom: 25px;
+        display: flex;
+        justify-self: center;
+        width: 24px;
+        height: 24px;
+      }
+      h4 {
+        display: flex;
+        justify-self: center;
+      }
+      &:hover {
+        transform: translateY(-5px);
+      }
+    }
+    .service__box-3 {
+      display: grid;
+      padding: 30px 80px;
+      justify-content: center;
+      background-color: rgba(255, 255, 255, 1);
+      box-shadow: 13px 10px 12px -6px rgba(34, 60, 80, 0.27);
+      border-radius: 12px;
+      border: none;
+      transition: transform 0.3s;
+      img {
+        margin-bottom: 25px;
+        display: flex;
+        justify-self: center;
+        width: 24px;
+        height: 24px;
+      }
+      h4 {
+        display: flex;
+        justify-self: center;
+      }
+      &:hover {
+        transform: translateY(-5px);
+      }
+    }
+  }
+}
+
+.add__shop {
+  padding: 8px 24px;
+  background-color: $color-orange;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  width: 100%;
+  &:hover {
+    border: 1px solid $color-black;
+    background-color: $color-white;
+  }
+}

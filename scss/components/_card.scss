@@ -1,0 +1,42 @@
+.products {
+  padding: 0 145px;
+  h1 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 32px;
+    font-size: 34px;
+    font-weight: bold;
+  }
+  .product__cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    .best__product__card {
+      border-radius: 12px;
+      background-color: $color-white;
+      img {
+        width: 100%;
+      }
+      .product__info {
+        padding: 8px 13px;
+        h3 {
+          font-size: 14px;
+          padding-bottom: 8px;
+        }
+        h4 {
+          font-size: 12px;
+          padding-bottom: 4px;
+        }
+        .product__mark {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding-bottom: 8px;
+          .product__size {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
