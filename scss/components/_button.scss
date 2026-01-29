@@ -1,36 +1,32 @@
 .lang-btns {
   background-color: $color-black;
   padding: 13px 145px;
-  // O'zgaruvchilar
   .lang-switcher {
     display: flex;
     align-items: center;
-    background-color: #000; // Qora fon
+    background-color: #000;
 
     &__btn {
       background: none;
       border: none;
-      color: gray; // Avval hamma til kulrang bo'ladi
+      color: gray;
       font-size: 12px;
       font-weight: bold;
       cursor: pointer;
       text-transform: uppercase;
       transition: color 0.3s ease;
       padding: 0 10px;
-
-      // BOSILGAN (ACTIVE) HOLATI
       &.active {
-        color: $color-white; // Tanlangan til oppoq bo'ladi
-        pointer-events: none; // Tanlangan tilni qayta bosib bo'lmaydi
+        color: $color-white;
+        pointer-events: none;
       }
-
       &:hover:not(.active) {
         color: lighten(gray, 20%);
       }
     }
 
     &__separator {
-      color: #444; // O'rtadagi "|" belgisi uchun rang
+      color: #444;
       font-size: 20px;
       user-select: none;
     }
@@ -47,13 +43,9 @@
     justify-content: center;
   }
   .services__card {
-    // display: flex;
-    // justify-content: center;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 100px;
-    // gap: 140px;
-
     .service__box-1 {
       display: grid;
       padding: 30px 60px;

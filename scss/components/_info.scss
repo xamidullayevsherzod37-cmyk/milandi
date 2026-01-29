@@ -1,0 +1,87 @@
+.ad {
+  background-color: rgba(15, 13, 43, 1);
+  display: flex;
+  padding: 0 145px;
+  gap: 65px;
+  margin-bottom: 60px;
+  .add__info {
+    padding-top: 115px;
+    h1 {
+      color: $color-white;
+      font-size: 34px;
+      padding-bottom: 30px;
+    }
+    p {
+      color: $color-white;
+      font-size: 18px;
+      padding-bottom: 30px;
+    }
+    .ad__btns {
+      display: flex;
+      gap: 30px;
+      button {
+        border: none;
+        padding: 2px 8px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: $transition;
+        &:hover {
+          transform: translateY(-5px);
+        }
+      }
+    }
+  }
+}
+
+.clothes {
+  padding: 60px 0;
+  display: flex;
+  .clothes__info {
+    padding: 101px 145px 101px 30px;
+    display: grid;
+    // grid-column: 24px;
+    background-color: $color-white;
+    h1 {
+      font-size: 34px;
+      color: $color-black;
+      padding-bottom: 24px;
+    }
+    p {
+      font-size: 16px;
+      color: $color-black;
+      padding-bottom: 24px;
+    }
+    button {
+      padding: 4px 10px;
+      background-color: $color-orange;
+      border: 1px solid transparent;
+      width: 200px;
+      border-radius: 8px;
+      transition: $transition;
+      a {
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: bolder;
+        color: $color-black;
+      }
+      &:hover {
+        box-shadow: 0 0 0 1px $color-black;
+        border: 1px solid $color-black;
+        background-color: $color-white;
+        transform: scale(0.98);
+      }
+    }
+  }
+}
+
+.discount {
+  background-color: $color-orange;
+  padding: 170px 300px;
+  p {
+    font-size: 44px;
+    font-weight: bolder;
+    span {
+      font-size: 66px;
+    }
+  }
+}
