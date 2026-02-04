@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../scss/main.css">
+    <link rel="shortcut icon" href="../images/logo.svg" type="image/x-icon">
+    <title>about-us</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-bottom"></div>
+        <div class="container">
+            <div class="lang-btns">
+                <div class="lang-switcher">
+                    <button class="lang-switcher__btn active" onclick="changeLang(this)">
+                        RU
+                    </button>
+                    <button class="lang-switcher__btn" onclick="changeLang(this)">
+                        UZB
+                    </button>
+                </div>
+            </div>
+
+            <nav id="nav">
+                <div class="nav__left">
+                    <div class="menu" onclick="myFunction(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+
+                    <div class="res__menu" id="mobileMenu">
+                        <div class="res__functions">
+                            <a href="../index.html">Главная</a>
+                            <a href="./about-us.html" class="active">О
+                                нас</a>
+                            <a href="./categories.html">Категории</a>
+                            <a href="#">Сотрудничество</a>
+                        </div>
+                        <div class="res__btns">
+                            <button class="sing-in">Регистрация</button>
+                            <button class="log-in">Вход</button>
+                        </div>
+                    </div>
+
+                    <div class="logos">
+                        <a href="../index.html"><img src="../images/logo.svg" alt="logo" class="logo"></a>
+                        <a href="../index.html"><img src="../images/logo-name.svg" alt="logo-name"
+                                class="logo-name" /></a>
+                    </div>
+
+                    <div class="functions">
+                        <a href="../index.html" class="functions__link">Главная</a>
+                        <a href="./about-us.html" class="functions__link active">О
+                            нас</a>
+                        <a href="./categories.html" class="functions__link">Категории</a>
+                        <a href="#" class="functions__link">Сотрудничество</a>
+                    </div>
+                </div>
+
+                <div class="nav__right">
+                    <div class="nav__btns">
+                        <button class="log-in">Войти</button>
+                        <button class="sing-in">Зарегистрироваться</button>
+                    </div>
+                    <a href="#" class="cart-wrapper">
+                        <img src="../images/shop-icon.svg" alt="Savat" class="cart-icon" />
+                        <span class="cart-badge">0</span>
+                    </a>
+                </div>
+            </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="about-us">
+                <h1>О нас</h1>
+                <div class="about__us__info">
+                    <div class="us__info">
+                        <h3>«Потрясающий опыт, мне это нравится
+                            много. Спасибо команде.</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit. Consequat leo, in sit
+                            tellus
+                            fermentum
+                            donec quisque diam molestie. Enim purus
+                            ullamcorper ultricies nisi. Eu sit laoreet
+                            egestas
+                            nascetur lacinia donec nunc viverra. Eu
+                            nullam cras eget egestas dui id platea
+                            magna. Massa
+                            lorem ultrices mauris tellus, mattis eu leo
+                            bibendum lobortis. </p>
+                    </div>
+                    <div class="us__img">
+                        <img src="../images/about-us-foto.svg" alt="about-us-foto">
+                    </div>
+                </div>
+            </div>
+
+            <div class="services">
+                <h1 class="service__intro">Наши преимущества</h1>
+                <div class="services__card">
+                    <button class="service__box-1">
+                        <img src="../images/ic_stars.svg" alt="ic_stars">
+                        <h4>Лучший сервис</h4>
+                    </button>
+                    <button class="service__box-2">
+                        <img src="../images/ic_truck.svg" alt="ic_truck">
+                        <h4>Экспресс доставка </h4>
+                    </button>
+                    <button class="service__box-3">
+                        <img src="../images/ic_like.svg" alt="ic_like">
+                        <h4>Лучшее качество в стране</h4>
+                    </button>
+                </div>
+            </div>
+
+            <div class="ad">
+                <div class="add__img">
+                    <img src="../images/phone-app.svg" alt="phone-app">
+                </div>
+                <div class="add__info">
+                    <h1>Скачай приложение и получай призы каждый
+                        день</h1>
+                    <p>Скачав наш приложение вы получаете возможность
+                        играть в
+                        призовые игры каждый день и выигровать разного
+                        рода
+                        подарки для себя.
+                        В нашем приложении призовые игры проходят
+                        аблолютно каждый день
+                        и всё это совершенно бесплатно.</p>
+                    <div class="ad__btns">
+                        <button><img src="../images/app-store.svg" alt="app-store"></button>
+                        <button><img src="../images/google-play.svg" alt="google-play"></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="work-time">
+                <div class="location">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6663.831775888336!2d-84.80533115226598!3d33.37326189999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f4c85f4701bbaf%3A0xf2fcd3575d566dea!2s15%20Perry%20Street!5e0!3m2!1sru!2s!4v1769701453133!5m2!1sru!2s"
+                        width="705px" height="600px" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+
+                <div class="working__time">
+                    <h1>Работаем по всему миру.</h1>
+                    <div class="branches">
+                        <span class="branch__name">
+                            <h4>Bali</h4>
+                            <p>508 Bridle Avenue Newnan, GA 30263</p>
+                        </span>
+                        <span class="branch__name">
+                            <h4>London</h4>
+                            <p>508 Bridle Avenue Newnan, GA 30263</p>
+                        </span>
+                        <span class="branch__name">
+                            <h4>Moscow</h4>
+                            <p>508 Bridle Avenue Newnan, GA 30263</p>
+                        </span>
+                        <span class="branch__name">
+                            <h4>Prague</h4>
+                            <p>508 Bridle Avenue Newnan, GA 30263</p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="container">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>ПРО IMPERIA</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit. Eget
+                    pretium aenean dignissim sit cursus dictumst
+                    adipiscing nunc.</p>
+                <div class="logo">
+                    <img src="../images/logo.svg" alt="Imperia Logo">
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h3>КОНТАКТЫ</h3>
+                <p>+998 90 958 78 87</p>
+                <p>support@fonon.uz</p>
+
+                <h3 class="work-time-title">РАБОЧЕЕ ВРЕМЯ</h3>
+                <p>По будням 9:00 to 18:00</p>
+                <p>В выходные 11:00 to 18:00</p>
+            </div>
+
+            <div class="footer-column">
+                <h3>МЕНЮ</h3>
+                <ul>
+                    <li><a href="../index.html">Главная</a></li>
+                    <li><a href="../pages/about-us.html">О нас</a></li>
+                    <li><a href="./categories.html">Категории</a></li>
+                    <li><a href="#">Сотрудничество</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>КАТЕГОРИИ</h3>
+                <ul>
+                    <li><a href="#">Женская одежда</a></li>
+                    <li><a href="#">Мужская одежда</a></li>
+                    <li><a href="#">Детская одежда</a></li>
+                    <li><a href="#">Обувь</a></li>
+                    <li><a href="#">Сумки</a></li>
+                    <li><a href="#">Аксесуары</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="../js/main.js"></script>
+
+</html>

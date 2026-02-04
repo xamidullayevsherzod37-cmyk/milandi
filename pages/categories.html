@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../scss/main.css">
+    <link rel="shortcut icon" href="../images/logo.svg" type="image/x-icon">
+    <title>Categories</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-bottom"></div>
+        <div class="container">
+            <div class="lang-btns">
+                <div class="lang-switcher">
+                    <button class="lang-switcher__btn active" onclick="changeLang(this)">
+                        RU
+                    </button>
+                    <button class="lang-switcher__btn" onclick="changeLang(this)">
+                        UZB
+                    </button>
+                </div>
+            </div>
+
+            <nav id="nav">
+                <div class="nav__left">
+                    <div class="menu" onclick="myFunction(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+
+                    <div class="res__menu" id="mobileMenu">
+                        <div class="res__functions">
+                            <a href="../index.html">Главная</a>
+                            <a href="./about-us.html">О
+                                нас</a>
+                            <a href="./categories.html" class="active">Категории</a>
+                            <a href="#">Сотрудничество</a>
+                        </div>
+                        <div class="res__btns">
+                            <button class="sing-in">Регистрация</button>
+                            <button class="log-in">Вход</button>
+                        </div>
+                    </div>
+
+                    <div class="logos">
+                        <a href="../index.html"><img src="../images/logo.svg" alt="logo" class="logo"></a>
+                        <a href="../index.html"><img src="../images/logo-name.svg" alt="logo-name"
+                                class="logo-name" /></a>
+                    </div>
+
+                    <div class="functions">
+                        <a href="../index.html" class="functions__link">Главная</a>
+                        <a href="./about-us.html" class="functions__link">О
+                            нас</a>
+                        <a href="./categories.html" class="functions__link active">Категории</a>
+                        <a href="#" class="functions__link">Сотрудничество</a>
+                    </div>
+                </div>
+
+                <div class="nav__right">
+                    <div class="nav__btns">
+                        <button class="log-in">Войти</button>
+                        <button class="sing-in">Зарегистрироваться</button>
+                    </div>
+                    <a href="#" class="cart-wrapper">
+                        <img src="../images/shop-icon.svg" alt="Savat" class="cart-icon" />
+                        <span class="cart-badge">0</span>
+                    </a>
+                </div>
+            </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="categorie-product">
+                <h1>Категории</h1>
+                <div class="categorie__products__container">
+                    <a href="./categories.html" class="categorie__product__wrapper">
+                        <img src="../images/categories-product-img-1.svg" alt="categories-product-img-1">
+                        <p>Women’s wear</p>
+                    </a>
+                    <a href="./categories.html" class="categorie__product__wrapper">
+                        <img src="../images/categories-product-img-2.svg" alt="categories-product-img-2">
+                        <p>Men’s wear</p>
+                    </a>
+                    <a href="./categories.html" class="categorie__product__wrapper">
+                        <img src="../images/categories-product-img-3.svg" alt="categories-product-img-3">
+                        <p>Kid’s wear</p>
+                    </a>
+                    <a href="./categories.html" class="categorie__product__wrapper">
+                        <img src="../images/categories-product-img-4.svg" alt="categories-product-img-4">
+                        <p>Shoes</p>
+                    </a>
+                    <a href="./categories.html" class="categorie__product__wrapper">
+                        <img src="../images/categories-product-img-5.svg" alt="categories-product-img-5">
+                        <p>Women's bags</p>
+                    </a>
+                    <a href="./categories.html" class="categorie__product__wrapper">
+                        <img src="../images/categories-product-img-6.svg" alt="categories-product-img-6">
+                        <p>Accessories</p>
+                    </a>
+                    <a href="./categories.html" class="categorie__product__wrapper">
+                        <img src="../images/categories-product-img-7.svg" alt="categories-product-img-7">
+                        <p>Underwear</p>
+                    </a>
+                    <a href="./categories.html" class="categorie__product__wrapper">
+                        <img src="../images/categories-product-img-8.svg" alt="categories-product-img-8">
+                        <p>Decorations</p>
+                    </a>
+                    <a href="./categories.html" class="categorie__product__wrapper">
+                        <img src="../images/categories-product-img-9.svg" alt="categories-product-img-9">
+                        <p>Home textiles</p>
+                    </a>
+                    <a href="./categories.html" class="categorie__product__wrapper">
+                        <img src="../images/categories-product-img-10.svg" alt="categories-product-img-10">
+                        <p>Wholesale</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="container">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>ПРО IMPERIA</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit. Eget
+                    pretium aenean dignissim sit cursus dictumst
+                    adipiscing nunc.</p>
+                <div class="logo">
+                    <img src="../images/logo.svg" alt="Imperia Logo">
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h3>КОНТАКТЫ</h3>
+                <p>+998 90 958 78 87</p>
+                <p>support@fonon.uz</p>
+
+                <h3 class="work-time-title">РАБОЧЕЕ ВРЕМЯ</h3>
+                <p>По будням 9:00 to 18:00</p>
+                <p>В выходные 11:00 to 18:00</p>
+            </div>
+
+            <div class="footer-column">
+                <h3>МЕНЮ</h3>
+                <ul>
+                    <li><a href="../index.html">Главная</a></li>
+                    <li><a href="../pages/about-us.html">О нас</a></li>
+                    <li><a href="./categories.html">Категории</a></li>
+                    <li><a href="#">Сотрудничество</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>КАТЕГОРИИ</h3>
+                <ul>
+                    <li><a href="#">Женская одежда</a></li>
+                    <li><a href="#">Мужская одежда</a></li>
+                    <li><a href="#">Детская одежда</a></li>
+                    <li><a href="#">Обувь</a></li>
+                    <li><a href="#">Сумки</a></li>
+                    <li><a href="#">Аксесуары</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="../js/main.js"></script>
+
+</html>

@@ -22,22 +22,6 @@ header {
       font-weight: bolder;
       padding: 20px 0;
     }
-
-    // .functions {
-    //   display: flex;
-    //   gap: 24px;
-    //   &__link {
-    //     text-decoration: none;
-    //     color: $color-black;
-    //     transition: $transition;
-    //     &:hover:not(.active) {
-    //       color: $color-orange;
-    //     }
-    //     &.active {
-    //       color: $color-orange;
-    //     }
-    //   }
-    // }
   }
 
   .nav__right {
@@ -94,15 +78,12 @@ header {
     width: 18px;
     height: 18px;
     border-radius: 50%;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     opacity: 0;
     visibility: hidden;
     transition: 0.3s ease;
-
     &.show {
       opacity: 1;
       visibility: visible;
@@ -148,18 +129,15 @@ header {
 
 // RESPONSIV MENU
 .res__menu {
+  width: 71.5%;
   position: fixed;
   top: 80px;
   left: 0;
-  width: 100%;
-  height: calc(100vh - 70px);
   background-color: #fff;
   z-index: 999;
-
   display: none;
   flex-direction: column;
   padding: 40px 20px;
-
   &.active {
     display: flex;
     animation: slideIn 0.4s ease-out forwards;
@@ -219,7 +197,6 @@ header {
   #nav {
     padding: 10px 20px;
     justify-content: space-between;
-
     .nav__left {
       gap: 20px;
       .functions,
@@ -228,6 +205,10 @@ header {
       }
       .menu {
         display: inline-block;
+      }
+      .res__menu {
+        width: 40%;
+        top: 70px;
       }
       .logo-name {
         display: inline;

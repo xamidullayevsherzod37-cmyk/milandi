@@ -141,11 +141,10 @@ header {
 }
 
 .res__menu {
+  width: 71.5%;
   position: fixed;
   top: 80px;
   left: 0;
-  width: 100%;
-  height: calc(100vh - 70px);
   background-color: #fff;
   z-index: 999;
   display: none;
@@ -219,6 +218,10 @@ header {
   }
   #nav .nav__left .menu {
     display: inline-block;
+  }
+  #nav .nav__left .res__menu {
+    width: 40%;
+    top: 70px;
   }
   #nav .nav__left .logo-name {
     display: inline;
@@ -438,21 +441,6 @@ header {
   transform: translateY(-5px);
 }
 
-.add__shop {
-  padding: 8px 24px;
-  background-color: rgb(255, 192, 0);
-  border: none;
-  cursor: pointer;
-  border-radius: 6px;
-  font-size: 14px;
-  font-weight: bold;
-  width: 100%;
-}
-.add__shop:hover {
-  border: 1px solid #000000;
-  background-color: rgb(255, 255, 255);
-}
-
 .products {
   padding: 0 145px;
 }
@@ -469,8 +457,15 @@ header {
   gap: 30px;
 }
 .products .product__cards .best__product__card {
+  text-decoration: none;
+  color: #000000;
   border-radius: 12px;
   background-color: rgb(255, 255, 255);
+  transition: 0.3s ease;
+}
+.products .product__cards .best__product__card:hover {
+  transform: translateY(-5px);
+  box-shadow: 13px 10px 12px -6px rgba(34, 60, 80, 0.27);
 }
 .products .product__cards .best__product__card img {
   width: 100%;
@@ -492,10 +487,68 @@ header {
   align-items: center;
   padding-bottom: 8px;
 }
-.products .product__cards .best__product__card .product__info .product__mark .product__size {
+.products .product__cards .best__product__card .product__info .product__mark .product__how__much {
   font-size: 18px;
 }
+.products .product__cards .best__product__card .card__action {
+  width: 100%;
+  position: relative;
+  z-index: 10;
+}
+.products .product__cards .best__product__card .card__action .add__shop {
+  padding: 12px;
+  background-color: rgb(255, 192, 0);
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  width: 100%;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+.products .product__cards .best__product__card .card__action .add__shop:hover {
+  background-color: rgb(204, 153.6, 0);
+  color: #fff;
+}
+.products .product__cards .best__product__card .card__action .counter__control {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  padding: 4px;
+}
+.products .product__cards .best__product__card .card__action .counter__control button {
+  width: 35px;
+  height: 35px;
+  border: none;
+  background-color: rgb(255, 192, 0);
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s;
+}
+.products .product__cards .best__product__card .card__action .counter__control button:hover {
+  background-color: orange;
+  color: #fff;
+}
+.products .product__cards .best__product__card .card__action .counter__control .count {
+  font-weight: bold;
+  font-size: 16px;
+}
 
+@media (max-width: 1200px) {
+  .product__cards,
+  .categorie__products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 .categories {
   padding: 60px 90px;
 }
@@ -513,11 +566,12 @@ header {
 }
 .categories .categorie__products .card {
   position: relative;
-  width: 300px;
-  height: 400px;
   overflow: hidden;
   border-radius: 12px;
   cursor: pointer;
+}
+.categories .categorie__products .card:hover .card-image img {
+  transform: scale(1.01);
 }
 .categories .categorie__products .card .card-image {
   width: 100%;
@@ -552,6 +606,39 @@ header {
 }
 .categories .categorie__products .card:hover .card-image img {
   transform: none;
+}
+
+.categorie-product {
+  padding: 64px 145px;
+}
+.categorie-product h1 {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 24px;
+}
+.categorie-product .categorie__products__container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+.categorie-product .categorie__products__container .categorie__product__wrapper {
+  border-radius: 8px;
+  background-color: rgb(255, 255, 255);
+  text-decoration: none;
+  color: #000000;
+  transition: 0.3s ease;
+}
+.categorie-product .categorie__products__container .categorie__product__wrapper:hover img {
+  transform: scale(1.01);
+}
+.categorie-product .categorie__products__container .categorie__product__wrapper img {
+  padding-bottom: 24px;
+}
+.categorie-product .categorie__products__container .categorie__product__wrapper p {
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  line-height: 130%;
 }
 
 .swiper {
@@ -715,12 +802,21 @@ header {
 .ad {
   background-color: rgb(15, 13, 43);
   display: flex;
+  justify-content: space-between;
   padding: 0 145px;
-  gap: 65px;
+  gap: 25px;
   margin-bottom: 60px;
+  position: relative;
+  margin-top: 170px;
+}
+.ad .add__img img {
+  position: absolute;
+  top: -40%;
 }
 .ad .add__info {
-  padding-top: 115px;
+  width: 60%;
+  display: grid;
+  padding: 60px 0;
 }
 .ad .add__info h1 {
   color: rgb(255, 255, 255);
@@ -797,4 +893,197 @@ header {
 }
 .discount p span {
   font-size: 66px;
+}
+
+.about-us {
+  padding: 60px 145px;
+}
+.about-us h1 {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 25px;
+}
+.about-us .about__us__info {
+  display: flex;
+  gap: 130px;
+}
+.about-us .about__us__info .us__info {
+  display: grid;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+  margin-top: 60px;
+}
+.about-us .about__us__info .us__info h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+.about-us .about__us__info .us__info p {
+  font-size: 16px;
+}
+.about-us .about__us__info .us__img img {
+  border-radius: 6px;
+}
+
+.work-time {
+  padding-top: 150px;
+  padding-bottom: 60px;
+  display: flex;
+}
+.work-time .working__time {
+  padding: 0 145px;
+}
+.work-time .working__time h1 {
+  font-size: 42px;
+  font-weight: bold;
+  padding-bottom: 65px;
+}
+.work-time .working__time .branches {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column: 36px;
+  gap: 128px;
+  font-size: 18px;
+}
+.work-time .working__time .branches h4 {
+  font-weight: bolder;
+  line-height: 32px;
+  padding-bottom: 8px;
+}
+
+.product-page {
+  padding: 64px 145px;
+  display: flex;
+  gap: 100px;
+}
+.product-page .product__left__imgs .top__img {
+  padding-bottom: 16px;
+}
+.product-page .product__left__imgs .top__img img {
+  width: 100%;
+  border-radius: 8px;
+}
+.product-page .product__left__imgs .bottom__imgs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+.product-page .product__left__imgs .bottom__imgs img {
+  width: 100px;
+  border-radius: 8px;
+}
+.product-page .product__right .product__intro {
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 140%;
+  padding-bottom: 16px;
+}
+.product-page .product__right .rating {
+  padding-bottom: 10px;
+}
+.product-page .product__right .product__info {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  padding-bottom: 4px;
+}
+.product-page .product__right .more {
+  border: none;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  margin-bottom: 8px;
+}
+.product-page .product__right .product__price {
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 140%;
+  padding-bottom: 16px;
+}
+.product-page .product__right .sizes h4 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  padding-bottom: 8px;
+}
+.product-page .product__right .sizes .size__btns {
+  display: flex;
+  gap: 8px;
+}
+.product-page .product__right .sizes .size__btns .product__size__btn {
+  border: 1px solid #000000;
+  padding: 8px;
+  cursor: pointer;
+  margin-bottom: 24px;
+}
+.product-page .product__right .card__action {
+  width: 400px;
+  position: relative;
+  z-index: 10;
+}
+.product-page .product__right .card__action .add__shop {
+  padding: 12px;
+  background-color: rgb(255, 192, 0);
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  width: 100%;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+.product-page .product__right .card__action .add__shop:hover {
+  background-color: rgb(204, 153.6, 0);
+  color: #fff;
+}
+.product-page .product__right .card__action .counter__control {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f5f5f5;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  padding: 4px;
+  transform: scale(0.98);
+}
+.product-page .product__right .card__action .counter__control button {
+  width: 35px;
+  height: 35px;
+  border: none;
+  background-color: rgb(255, 192, 0);
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s;
+}
+.product-page .product__right .card__action .counter__control button:hover {
+  background-color: rgb(255, 192, 0);
+  color: #fff;
+}
+.product-page .product__right .card__action .counter__control .count {
+  font-weight: bold;
+  font-size: 16px;
+}
+.product-page .product__right .our__benefits {
+  padding-top: 24px;
+}
+.product-page .product__right .our__benefits .benefit__intro {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 140%;
+  padding-bottom: 24px;
+}
+.product-page .product__right .our__benefits .benefit__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+.product-page .product__right .our__benefits .benefit__wrapper span {
+  cursor: pointer;
+  display: flex;
+  gap: 16px;
+  align-items: center;
 }/*# sourceMappingURL=main.css.map */

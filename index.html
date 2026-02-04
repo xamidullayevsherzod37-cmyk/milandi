@@ -35,9 +35,9 @@
 
           <div class="res__menu" id="mobileMenu">
             <div class="res__functions">
-              <a href="#" class="active">Главная</a>
-              <a href="#">О нас</a>
-              <a href="#">Категории</a>
+              <a href="./index.html" class="active">Главная</a>
+              <a href="./pages/about-us.html">О нас</a>
+              <a href="./pages/categories.html">Категории</a>
               <a href="#">Сотрудничество</a>
             </div>
             <div class="res__btns">
@@ -51,11 +51,10 @@
             <a href="./index.html"><img src="./images/logo-name.svg" alt="logo-name" class="logo-name" /></a>
           </div>
 
-
           <div class="functions">
-            <a href="#" class="functions__link active">Главная</a>
-            <a href="#" class="functions__link">О нас</a>
-            <a href="#" class="functions__link">Категории</a>
+            <a href="./index.html" class="functions__link active">Главная</a>
+            <a href="./pages/about-us.html" class="functions__link">О нас</a>
+            <a href="./pages/categories.html" class="functions__link">Категории</a>
             <a href="#" class="functions__link">Сотрудничество</a>
           </div>
         </div>
@@ -71,7 +70,6 @@
           </a>
         </div>
       </nav>
-      <!-- <button class="add__shop">Добавить в корзину</button> -->
   </header>
 
   <main>
@@ -81,9 +79,12 @@
           <div class="swiper-slide slide-bg">
             <div class="slide-container">
               <div class="content">
-                <h1 class="animate-title">Быстрый и удобный шоппинг, не выходя из дома.</h1>
-                <p class="animate-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Convallis lectus odio
-                  vitae, duis nec ut velit, fermentum. Diam sollicitudin arcu euismod morbi. Adipiscing bibendum
+                <h1 class="animate-title">Быстрый и удобный шоппинг, не
+                  выходя из дома.</h1>
+                <p class="animate-desc">Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit. Convallis lectus odio
+                  vitae, duis nec ut velit, fermentum. Diam sollicitudin
+                  arcu euismod morbi. Adipiscing bibendum
                   elementum, fermentum amet quis erat.</p>
                 <a href="#" class="btn-more">▶ ВСЕ ТОВАРЫ</a>
               </div>
@@ -96,9 +97,12 @@
           <div class="swiper-slide slide-bg">
             <div class="slide-container">
               <div class="content">
-                <h1 class="animate-title">Быстрый и удобный шоппинг, не выходя из дома.</h1>
-                <p class="animate-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Convallis lectus odio
-                  vitae, duis nec ut velit, fermentum. Diam sollicitudin arcu euismod morbi. Adipiscing bibendum
+                <h1 class="animate-title">Быстрый и удобный шоппинг, не
+                  выходя из дома.</h1>
+                <p class="animate-desc">Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit. Convallis lectus odio
+                  vitae, duis nec ut velit, fermentum. Diam sollicitudin
+                  arcu euismod morbi. Adipiscing bibendum
                   elementum, fermentum amet quis erat.</p>
                 <a href="#" class="btn-more">▶ ВСЕ ТОВАРЫ</a>
               </div>
@@ -134,7 +138,7 @@
       <div class="products">
         <h1>Лучшие товары</h1>
         <div class="product__cards">
-          <span class="best__product__card">
+          <a href="./pages/product-page.html" class="best__product__card">
             <img src="./images/product-img-1.svg" alt="product-img-1">
             <div class="product__info">
               <h3>Lorem ipsum dolor sit amet</h3>
@@ -152,16 +156,21 @@
                   <input value="1" name="rating" id="star1" type="radio">
                   <label for="star1"></label>
                 </div>
-
-                <div class="product__size">
+                <div class="product__how__much">
                   <h6>855 у.е.</h6>
                 </div>
               </div>
-              <button class="add__shop">Добавить в корзину</button>
+              <div class="card__action">
+                <button type="button" class="add__shop">Добавить в корзину</button>
+                <div class="counter__control" style="display: none;">
+                  <button type="button" class="minus">-</button>
+                  <span class="count">1</span>
+                  <button type="button" class="plus">+</button>
+                </div>
+              </div>
             </div>
-          </span>
-
-          <span class="best__product__card">
+          </a>
+          <a href="./pages/product-page.html" class="best__product__card">
             <img src="./images/product-img-2.svg" alt="product-img-1">
             <div class="product__info">
               <h3>Lorem ipsum dolor sit amet</h3>
@@ -179,16 +188,21 @@
                   <input value="1" name="rating" id="star1" type="radio">
                   <label for="star1"></label>
                 </div>
-
-                <div class="product__size">
+                <div class="product__how__much">
                   <h6>855 у.е.</h6>
                 </div>
               </div>
-              <button class="add__shop">Добавить в корзину</button>
+              <div class="card__action">
+                <button type="button" class="add__shop">Добавить в корзину</button>
+                <div class="counter__control" style="display: none;">
+                  <button type="button" class="minus">-</button>
+                  <span class="count">1</span>
+                  <button type="button" class="plus">+</button>
+                </div>
+              </div>
             </div>
-          </span>
-
-          <span class="best__product__card">
+          </a>
+          <a href="./pages/product-page.html" class="best__product__card">
             <img src="./images/product-img-3svg.svg" alt="product-img-1">
             <div class="product__info">
               <h3>Lorem ipsum dolor sit amet</h3>
@@ -206,16 +220,21 @@
                   <input value="1" name="rating" id="star1" type="radio">
                   <label for="star1"></label>
                 </div>
-
-                <div class="product__size">
+                <div class="product__how__much">
                   <h6>855 у.е.</h6>
                 </div>
               </div>
-              <button class="add__shop">Добавить в корзину</button>
+              <div class="card__action">
+                <button type="button" class="add__shop">Добавить в корзину</button>
+                <div class="counter__control" style="display: none;">
+                  <button type="button" class="minus">-</button>
+                  <span class="count">1</span>
+                  <button type="button" class="plus">+</button>
+                </div>
+              </div>
             </div>
-          </span>
-
-          <span class="best__product__card">
+          </a>
+          <a href="./pages/product-page.html" class="best__product__card">
             <img src="./images/product-img-4svg.svg" alt="product-img-1">
             <div class="product__info">
               <h3>Lorem ipsum dolor sit amet</h3>
@@ -233,55 +252,58 @@
                   <input value="1" name="rating" id="star1" type="radio">
                   <label for="star1"></label>
                 </div>
-
-                <div class="product__size">
+                <div class="product__how__much">
                   <h6>855 у.е.</h6>
                 </div>
               </div>
-              <button class="add__shop">Добавить в корзину</button>
+              <div class="card__action">
+                <button type="button" class="add__shop">Добавить в корзину</button>
+                <div class="counter__control" style="display: none;">
+                  <button type="button" class="minus">-</button>
+                  <span class="count">1</span>
+                  <button type="button" class="plus">+</button>
+                </div>
+              </div>
             </div>
-          </span>
+          </a>
         </div>
       </div>
 
       <div class="categories">
         <h1>Категории</h1>
         <div class="categorie__products">
-          <div class="card">
+          <a href="./pages/categories.html" class="card">
             <div class="card-image">
               <img src="./images/categories-img-1.jpg" alt="Ayollar poyabzali">
             </div>
             <div class="card-overlay">
               <h2 class="card-title">Женская обувь</h2>
             </div>
-          </div>
-
-          <div class="card">
+          </a>
+          <a href="./pages/categories.html" class="card">
             <div class="card-image">
               <img src="./images/categories-img-2.svg" alt="Ayollar poyabzali">
             </div>
             <div class="card-overlay">
               <h2 class="card-title">Женская сумка</h2>
             </div>
-          </div>
-
-          <div class="card">
+          </a>
+          <a href="./pages/categories.html" class="card">
             <div class="card-image">
               <img src="./images/categories-img-3.svg" alt="Ayollar poyabzali">
             </div>
             <div class="card-overlay">
               <h2 class="card-title">Муржской шапка</h2>
             </div>
-          </div>
-
-          <div class="card">
+          </a>
+          <a href="./pages/categories.html" class="card">
             <div class="card-image">
               <img src="./images/categories-img-4.svg" alt="Ayollar poyabzali">
             </div>
             <div class="card-overlay">
               <h2 class="card-title">Муржской обувь</h2>
             </div>
-          </div>
+          </a>
         </div>
       </div>
 
@@ -291,9 +313,11 @@
         </div>
         <div class="add__info">
           <h1>Скачай приложение и получай призы каждый день</h1>
-          <p>Скачав наш приложение вы получаете возможность играть в призовые игры каждый день и выигровать разного рода
+          <p>Скачав наш приложение вы получаете возможность играть в
+            призовые игры каждый день и выигровать разного рода
             подарки для себя.
-            В нашем приложении призовые игры проходят аблолютно каждый день и всё это совершенно бесплатно.</p>
+            В нашем приложении призовые игры проходят аблолютно каждый день
+            и всё это совершенно бесплатно.</p>
           <div class="ad__btns">
             <button><img src="./images/app-store.svg" alt="app-store"></button>
             <button><img src="./images/google-play.svg" alt="google-play"></button>
@@ -304,7 +328,7 @@
       <div class="products">
         <h1>Новые товары</h1>
         <div class="product__cards">
-          <span class="best__product__card">
+          <a href="./pages/product-page.html" class="best__product__card">
             <img src="./images/product-img-1.svg" alt="product-img-1">
             <div class="product__info">
               <h3>Lorem ipsum dolor sit amet</h3>
@@ -322,15 +346,21 @@
                   <input value="1" name="rating" id="star1" type="radio">
                   <label for="star1"></label>
                 </div>
-                <div class="product__size">
+                <div class="product__how__much">
                   <h6>855 у.е.</h6>
                 </div>
               </div>
-              <button class="add__shop">Добавить в корзину</button>
+              <div class="card__action">
+                <button type="button" class="add__shop">Добавить в корзину</button>
+                <div class="counter__control" style="display: none;">
+                  <button type="button" class="minus">-</button>
+                  <span class="count">1</span>
+                  <button type="button" class="plus">+</button>
+                </div>
+              </div>
             </div>
-          </span>
-
-          <span class="best__product__card">
+          </a>
+          <a href="./pages/product-page.html" class="best__product__card">
             <img src="./images/product-img-2.svg" alt="product-img-1">
             <div class="product__info">
               <h3>Lorem ipsum dolor sit amet</h3>
@@ -348,15 +378,21 @@
                   <input value="1" name="rating" id="star1" type="radio">
                   <label for="star1"></label>
                 </div>
-                <div class="product__size">
+                <div class="product__how__much">
                   <h6>855 у.е.</h6>
                 </div>
               </div>
-              <button class="add__shop">Добавить в корзину</button>
+              <div class="card__action">
+                <button type="button" class="add__shop">Добавить в корзину</button>
+                <div class="counter__control" style="display: none;">
+                  <button type="button" class="minus">-</button>
+                  <span class="count">1</span>
+                  <button type="button" class="plus">+</button>
+                </div>
+              </div>
             </div>
-          </span>
-
-          <span class="best__product__card">
+          </a>
+          <a href="./pages/product-page.html" class="best__product__card">
             <img src="./images/product-img-3svg.svg" alt="product-img-1">
             <div class="product__info">
               <h3>Lorem ipsum dolor sit amet</h3>
@@ -374,15 +410,21 @@
                   <input value="1" name="rating" id="star1" type="radio">
                   <label for="star1"></label>
                 </div>
-                <div class="product__size">
+                <div class="product__how__much">
                   <h6>855 у.е.</h6>
                 </div>
               </div>
-              <button class="add__shop">Добавить в корзину</button>
+              <div class="card__action">
+                <button type="button" class="add__shop">Добавить в корзину</button>
+                <div class="counter__control" style="display: none;">
+                  <button type="button" class="minus">-</button>
+                  <span class="count">1</span>
+                  <button type="button" class="plus">+</button>
+                </div>
+              </div>
             </div>
-          </span>
-
-          <span class="best__product__card">
+          </a>
+          <a href="./pages/product-page.html" class="best__product__card">
             <img src="./images/product-img-4svg.svg" alt="product-img-1">
             <div class="product__info">
               <h3>Lorem ipsum dolor sit amet</h3>
@@ -400,13 +442,20 @@
                   <input value="1" name="rating" id="star1" type="radio">
                   <label for="star1"></label>
                 </div>
-                <div class="product__size">
+                <div class="product__how__much">
                   <h6>855 у.е.</h6>
                 </div>
               </div>
-              <button class="add__shop">Добавить в корзину</button>
+              <div class="card__action">
+                <button type="button" class="add__shop">Добавить в корзину</button>
+                <div class="counter__control" style="display: none;">
+                  <button type="button" class="minus">-</button>
+                  <span class="count">1</span>
+                  <button type="button" class="plus">+</button>
+                </div>
+              </div>
             </div>
-          </span>
+          </a>
         </div>
       </div>
 
@@ -416,8 +465,10 @@
         </div>
         <div class="clothes__info">
           <h1>Создай свой лук на все случаи жизни в “Imperia”</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam sollicitudin a cursus in. Vel sit donec
-            semper magna dignissim. Amet, mi justo at metus vestibulum sollicitudin lacus. Nunc vel egestas fermentum
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam
+            sollicitudin a cursus in. Vel sit donec
+            semper magna dignissim. Amet, mi justo at metus vestibulum
+            sollicitudin lacus. Nunc vel egestas fermentum
             pellentesque sed vitae vel.</p>
           <button>
             <a href="#">начать покупки</a>
@@ -426,7 +477,8 @@
       </div>
 
       <div class="discount">
-        <p>Скидка <span>30%</span> на первую покупку<br> обслютно для всех</p>
+        <p>Скидка <span>30%</span> на первую покупку<br> обслютно для
+          всех</p>
       </div>
     </div>
   </main>
@@ -435,7 +487,8 @@
     <div class="footer-container">
       <div class="footer-column">
         <h3>ПРО IMPERIA</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget pretium aenean dignissim sit cursus dictumst
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget
+          pretium aenean dignissim sit cursus dictumst
           adipiscing nunc.</p>
         <div class="logo">
           <img src="./images/logo.svg" alt="Imperia Logo">
@@ -455,9 +508,9 @@
       <div class="footer-column">
         <h3>МЕНЮ</h3>
         <ul>
-          <li><a href="#">Главная</a></li>
-          <li><a href="#">О нас</a></li>
-          <li><a href="#">Категории</a></li>
+          <li><a href="./index.html">Главная</a></li>
+          <li><a href="./pages/about-us.html">О нас</a></li>
+          <li><a href="./pages/categories.html">Категории</a></li>
           <li><a href="#">Сотрудничество</a></li>
         </ul>
       </div>

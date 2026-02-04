@@ -120,18 +120,3 @@
     }
   }
 }
-
-.add__shop {
-  padding: 8px 24px;
-  background-color: $color-orange;
-  border: none;
-  cursor: pointer;
-  border-radius: 6px;
-  font-size: 14px;
-  font-weight: bold;
-  width: 100%;
-  &:hover {
-    border: 1px solid $color-black;
-    background-color: $color-white;
-  }
-}
