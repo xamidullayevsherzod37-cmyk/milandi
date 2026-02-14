@@ -9,6 +9,8 @@ header {
   padding: $padding;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 9px 32px 16px -24px rgba(34, 60, 80, 0.25);
+
   .nav__left {
     display: flex;
     gap: 70px;

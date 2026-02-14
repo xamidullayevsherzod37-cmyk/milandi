@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../scss/main.css">
     <link rel="shortcut icon" href="../images/logo.svg" type="image/x-icon">
-    <title>Product-page</title>
+    <title>Add shop</title>
 </head>
 
 <body>
@@ -76,81 +76,95 @@
 
     <main>
         <div class="container">
-            <div class="product-page">
-                <div class="product__left__imgs">
-                    <div class="top__img">
-                        <img src="../images/product-img-1.svg" alt="top__img">
+            <div class="product-shop">
+                <div class="shop__product__wrappers">
+                    <div class="shop__product__card">
+                        <div class="shop__product__img">
+                            <img src="../images/product-img-2.svg" alt="">
+                        </div>
+                        <div class="shop__product__about">
+                            <div class="shop__product__top">
+                                <h1>Худи мужская белая с принтом.</h1>
+                                <button class="delate__btn">x</button>
+                            </div>
+                            <div class="shop__product__info">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget tellus purus, id
+                                    pretium
+                                    viverra rutrum. Et blandit nunc a pellentesque in cras facilisis sapien, dictum. At
+                                    vel
+                                    egestas urna morbi tortor leo ut. In curabitur at pretium vulputate in. Porta
+                                    bibendum
+                                    feugiat congue id rhoncus. Vel semper enim, eget.</p>
+                            </div>
+                            <div class="shop__product__bottom">
+                                <div class="shop__product__bottom__left">
+                                    <div class="shop__product__price">25.000 Сум</div>
+                                    <div class="shop__product__size">
+                                        <h3>Size:</h3>
+                                        <p class="shop__product__size__see">28</p>
+                                    </div>
+                                </div>
+                                <div class="shop__product__bottom__right">
+                                    <div class="counter__control">
+                                        <button type="button" class="minus">-</button>
+                                        <span class="count">1</span>
+                                        <button type="button" class="plus">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="bottom__imgs">
-                        <img src="../images/product-img-1.svg" alt="bottom__img">
-                        <img src="../images/product-img-1.svg" alt="bottom__img">
-                        <img src="../images/product-img-1.svg" alt="bottom__img">
-                        <img src="../images/product-img-1.svg" alt="bottom__img">
+                    <div class="shop__product__card">
+                        <div class="shop__product__img">
+                            <img src="../images/product-img-1.svg" alt="">
+                        </div>
+                        <div class="shop__product__about">
+                            <div class="shop__product__top">
+                                <h1>Худи мужская белая с принтом.</h1>
+                                <button class="delate__btn">x</button>
+                            </div>
+                            <div class="shop__product__info">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget tellus purus, id
+                                    pretium
+                                    viverra rutrum. Et blandit nunc a pellentesque in cras facilisis sapien, dictum. At
+                                    vel
+                                    egestas urna morbi tortor leo ut. In curabitur at pretium vulputate in. Porta
+                                    bibendum
+                                    feugiat congue id rhoncus. Vel semper enim, eget.</p>
+                            </div>
+                            <div class="shop__product__bottom">
+                                <div class="shop__product__bottom__left">
+                                    <div class="shop__product__price">25.000 Сум</div>
+                                    <div class="shop__product__size">
+                                        <h3>Size:</h3>
+                                        <p class="shop__product__size__see">28</p>
+                                    </div>
+                                </div>
+                                <div class="shop__product__bottom__right">
+                                    <div class="counter__control">
+                                        <button type="button" class="minus">-</button>
+                                        <span class="count">1</span>
+                                        <button type="button" class="plus">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="product__right">
-                    <h1 class="product__intro">Lorem ipsum dolor sit amet</h1>
-                    <div class="rating">
-                        <input value="5" name="rating" id="star5" type="radio">
-                        <label for="star5"></label>
-                        <input value="4" name="rating" id="star4" type="radio">
-                        <label for="star4"></label>
-                        <input value="3" name="rating" id="star3" type="radio">
-                        <label for="star3"></label>
-                        <input value="2" name="rating" id="star2" type="radio">
-                        <label for="star2"></label>
-                        <input value="1" name="rating" id="star1" type="radio">
-                        <label for="star1"></label>
+                <div class="shop__product__wrapper__bottom">
+                    <div class="shop__product__all__price">
+                        <h3>Общая цена:</h3>
+                        <p class="shop__product__change__price">50.000 Сум</p>
                     </div>
-                    <h4 class="product__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam faucibus
-                        porttitor rutrum at
-                        tellus sodales libero. Eleifend non.</h4>
-                    <button class="more">More...</button>
-                    <div class="product__price">855 у.е.</div>
-                    <div class="sizes">
-                        <h4>Size</h4>
-                        <div class="size__btns">
-                            <buttto class="product__size__btn">28</buttto>
-                            <buttto class="product__size__btn">30</buttto>
-                            <buttto class="product__size__btn">32</buttto>
-                            <buttto class="product__size__btn">34</buttto>
-                            <buttto class="product__size__btn">36</buttto>
-                        </div>
-                    </div>
-                    <div class="card__action">
-                        <button type="button" class="add__shop">Добавить в корзину</button>
-                        <div class="counter__control" style="display: none;">
-                            <button type="button" class="minus">-</button>
-                            <span class="count">1</span>
-                            <button type="button" class="plus">+</button>
-                        </div>
-                    </div>
-                    <div class="our__benefits">
-                        <h3 class="benefit__intro">Преимущества</h3>
-                        <div class="benefit__wrapper">
-                            <span>
-                                <img src="../images/trac.svg" alt="trac">
-                                <p>Delivery in 7 days</p>
-                            </span>
-                            <span>
-                                <img src="../images/sew.svg" alt="sew">
-                                <p>90-day Buyer Protection</p>
-                            </span>
-                            <span>
-                                <img src="../images/star.svg" alt="star">
-                                <p>Trusted seller</p>
-                            </span>
-                            <span>
-                                <img src="../images/done.svg" alt="done">
-                                <p>Aviable to order</p>
-                            </span>
-                        </div>
-                    </div>
+                    <a href="#" class="shop__product__order">
+                        <button class="shop__add__btn">Оформить заказ</button>
+                    </a>
                 </div>
+
             </div>
 
             <div class="products">
-                <h1>Лучшие товары</h1>
+                <h1>Похожие товары</h1>
                 <div class="product__cards">
                     <a href="./product-page.html" class="best__product__card">
                         <img src="../images/product-img-1.svg" alt="product-img-1">
@@ -282,28 +296,6 @@
                     </a>
                 </div>
             </div>
-
-            <div class="categorie-product">
-                <h1>Лучшие категории</h1>
-                <div class="categorie__products__container">
-                    <a href="./categories.html" class="categorie__product__wrapper">
-                        <img src="../images/categories-product-img-1.svg" alt="categories-product-img-1">
-                        <p>Women’s wear</p>
-                    </a>
-                    <a href="./categories.html" class="categorie__product__wrapper">
-                        <img src="../images/categories-product-img-2.svg" alt="categories-product-img-2">
-                        <p>Men’s wear</p>
-                    </a>
-                    <a href="./categories.html" class="categorie__product__wrapper">
-                        <img src="../images/categories-product-img-3.svg" alt="categories-product-img-3">
-                        <p>Kid’s wear</p>
-                    </a>
-                    <a href="./categories.html" class="categorie__product__wrapper">
-                        <img src="../images/categories-product-img-4.svg" alt="categories-product-img-4">
-                        <p>Shoes</p>
-                    </a>
-                </div>
-            </div>
         </div>
     </main>
 
@@ -353,7 +345,8 @@
             </div>
         </div>
     </footer>
+    <script src="../js/main.js"></script>
 </body>
-<script src="../js/main.js"></script>
+
 
 </html>

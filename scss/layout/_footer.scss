@@ -1,8 +1,9 @@
 .footer-container {
+  background-color: $color-white;
   padding: 40px 145px;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap; /* Mobil versiya uchun */
+  flex-wrap: wrap;
   gap: 30px;
 }
 

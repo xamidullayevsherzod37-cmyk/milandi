@@ -1,5 +1,6 @@
 .products {
   padding: 0 145px;
+  padding-bottom: 60px;
   h1 {
     display: flex;
     justify-content: center;
@@ -203,6 +204,152 @@
         justify-content: center;
         font-size: 24px;
         line-height: 130%;
+      }
+    }
+  }
+}
+
+.product-shop {
+  padding: 72px 145px;
+  .shop__product__wrappers {
+    display: grid;
+    gap: 24px;
+    padding-bottom: 40px;
+    .shop__product__card {
+      background-color: $color-white;
+      display: flex;
+      border-radius: 12px;
+      .shop__product__img {
+        img {
+          border-radius: 12px;
+        }
+      }
+      .shop__product__about {
+        display: grid;
+        padding: 20px 30px;
+        .shop__product__top {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding-bottom: 50px;
+          h1 {
+            font-size: 24px;
+            line-height: 140%;
+            padding: 0;
+          }
+          .delate__btn {
+            border: none;
+            background-color: $color-white;
+            font-size: 24px;
+            cursor: pointer;
+          }
+        }
+        .shop__product__info {
+          padding-bottom: 30px;
+          p {
+            font-size: 16px;
+            line-height: 160%;
+          }
+        }
+        .shop__product__bottom {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .shop__product__bottom__left {
+            display: flex;
+            gap: 40px;
+            .shop__product__price {
+              font-size: 16px;
+              line-height: 140%;
+            }
+            .shop__product__size {
+              display: flex;
+              gap: 13px;
+              align-items: end;
+              h3 {
+                font-size: 16px;
+                line-height: 140%;
+                font-weight: normal;
+              }
+              .shop__product__size__see {
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: 700;
+              }
+            }
+          }
+          .shop__product__bottom__right {
+            .counter__control {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              background-color: #f5f5f5;
+              border-radius: 8px;
+              padding: 4px;
+              width: 100px;
+              button {
+                width: 35px;
+                height: 35px;
+                border: none;
+                background-color: $color-orange;
+                color: #fff;
+                border-radius: 6px;
+                cursor: pointer;
+                font-size: 18px;
+                font-weight: bold;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: 0.2s;
+
+                &:hover {
+                  background-color: orange;
+                  color: black;
+                }
+              }
+              .count {
+                font-weight: bold;
+                font-size: 16px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .shop__product__wrapper__bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    align-items: center;
+    .shop__product__all__price {
+      display: flex;
+      align-items: flex-end;
+      gap: 16px;
+      .shop__product__change__price {
+        font-size: 16px;
+        line-height: 140%;
+        font-weight: 400;
+        padding: 0;
+        display: flex;
+        align-items: end;
+      }
+    }
+    .shop__product__order {
+      text-decoration-line: none;
+      .shop__add__btn {
+        cursor: pointer;
+        padding: 16px 50px;
+        font-size: 16px;
+        line-height: 140%;
+        font-weight: 600;
+        border: none;
+        border-radius: 8px;
+        background-color: $color-orange;
+        &:hover {
+          background-color: orange;
+          color: #fff;
+        }
       }
     }
   }

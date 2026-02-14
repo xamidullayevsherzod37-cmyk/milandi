@@ -35,6 +35,7 @@ header {
   padding: 0 145px;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 9px 32px 16px -24px rgba(34, 60, 80, 0.25);
 }
 #nav .nav__left {
   display: flex;
@@ -262,10 +263,11 @@ header {
 }
 
 .footer-container {
+  background-color: rgb(255, 255, 255);
   padding: 40px 145px;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap; /* Mobil versiya uchun */
+  flex-wrap: wrap;
   gap: 30px;
 }
 
@@ -443,6 +445,7 @@ header {
 
 .products {
   padding: 0 145px;
+  padding-bottom: 60px;
 }
 .products h1 {
   display: flex;
@@ -639,6 +642,147 @@ header {
   justify-content: center;
   font-size: 24px;
   line-height: 130%;
+}
+
+.product-shop {
+  padding: 72px 145px;
+}
+.product-shop .shop__product__wrappers {
+  display: grid;
+  gap: 24px;
+  padding-bottom: 40px;
+}
+.product-shop .shop__product__wrappers .shop__product__card {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  border-radius: 12px;
+}
+.product-shop .shop__product__wrappers .shop__product__card .shop__product__img img {
+  border-radius: 12px;
+}
+.product-shop .shop__product__wrappers .shop__product__card .shop__product__about {
+  display: grid;
+  padding: 20px 30px;
+}
+.product-shop .shop__product__wrappers .shop__product__card .shop__product__about .shop__product__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+.product-shop .shop__product__wrappers .shop__product__card .shop__product__about .shop__product__top h1 {
+  font-size: 24px;
+  line-height: 140%;
+  padding: 0;
+}
+.product-shop .shop__product__wrappers .shop__product__card .shop__product__about .shop__product__top .delate__btn {
+  border: none;
+  background-color: rgb(255, 255, 255);
+  font-size: 24px;
+  cursor: pointer;
+}
+.product-shop .shop__product__wrappers .shop__product__card .shop__product__about .shop__product__info {
+  padding-bottom: 30px;
+}
+.product-shop .shop__product__wrappers .shop__product__card .shop__product__about .shop__product__info p {
+  font-size: 16px;
+  line-height: 160%;
+}
+.product-shop .shop__product__wrappers .shop__product__card .shop__product__about .shop__product__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.product-shop .shop__product__wrappers .shop__product__card .shop__product__about .shop__product__bottom .shop__product__bottom__left {
+  display: flex;
+  gap: 40px;
+}
+.product-shop .shop__product__wrappers .shop__product__card .shop__product__about .shop__product__bottom .shop__product__bottom__left .shop__product__price {
+  font-size: 16px;
+  line-height: 140%;
+}
+.product-shop .shop__product__wrappers .shop__product__card .shop__product__about .shop__product__bottom .shop__product__bottom__left .shop__product__size {
+  display: flex;
+  gap: 13px;
+  align-items: end;
+}
+.product-shop .shop__product__wrappers .shop__product__card .shop__product__about .shop__product__bottom .shop__product__bottom__left .shop__product__size h3 {
+  font-size: 16px;
+  line-height: 140%;
+  font-weight: normal;
+}
+.product-shop .shop__product__wrappers .shop__product__card .shop__product__about .shop__product__bottom .shop__product__bottom__left .shop__product__size .shop__product__size__see {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+}
+.product-shop .shop__product__wrappers .shop__product__card .shop__product__about .shop__product__bottom .shop__product__bottom__right .counter__control {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  padding: 4px;
+  width: 100px;
+}
+.product-shop .shop__product__wrappers .shop__product__card .shop__product__about .shop__product__bottom .shop__product__bottom__right .counter__control button {
+  width: 35px;
+  height: 35px;
+  border: none;
+  background-color: rgb(255, 192, 0);
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s;
+}
+.product-shop .shop__product__wrappers .shop__product__card .shop__product__about .shop__product__bottom .shop__product__bottom__right .counter__control button:hover {
+  background-color: orange;
+  color: black;
+}
+.product-shop .shop__product__wrappers .shop__product__card .shop__product__about .shop__product__bottom .shop__product__bottom__right .counter__control .count {
+  font-weight: bold;
+  font-size: 16px;
+}
+.product-shop .shop__product__wrapper__bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+}
+.product-shop .shop__product__wrapper__bottom .shop__product__all__price {
+  display: flex;
+  align-items: flex-end;
+  gap: 16px;
+}
+.product-shop .shop__product__wrapper__bottom .shop__product__all__price .shop__product__change__price {
+  font-size: 16px;
+  line-height: 140%;
+  font-weight: 400;
+  padding: 0;
+  display: flex;
+  align-items: end;
+}
+.product-shop .shop__product__wrapper__bottom .shop__product__order {
+  text-decoration-line: none;
+}
+.product-shop .shop__product__wrapper__bottom .shop__product__order .shop__add__btn {
+  cursor: pointer;
+  padding: 16px 50px;
+  font-size: 16px;
+  line-height: 140%;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  background-color: rgb(255, 192, 0);
+}
+.product-shop .shop__product__wrapper__bottom .shop__product__order .shop__add__btn:hover {
+  background-color: orange;
+  color: #fff;
 }
 
 .swiper {
